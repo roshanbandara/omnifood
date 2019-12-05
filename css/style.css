@@ -371,16 +371,18 @@ input[type=submit] {
 
 /*sticky navi*/
 .sticky {
+  grid-template-rows: min-content;
   position: fixed;
   width: 100%;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   /* roshan - copied this from google developer site */
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
   transition: transform 3s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 5000; }
-  @media only screen and (max-width: 56.25em) {
-    .sticky {
-      min-height: auto; } }
+  z-index: 5000;
+  /*
+     @media only screen and (max-width: $bp-medium) { //roshan - may be not nessery        
+          min-height: auto; // )))))))
+     }  */ }
 
 /*backdrop filter==============================================================================================================*/
 @supports (backdrop-filter: none) {
@@ -443,6 +445,10 @@ input[type=submit] {
   .sticky .top-nav__link-box a i {
     font-size: 2.8rem;
     padding-bottom: 0; } }
+
+@media only screen and (max-width: 37.5em) {
+  .sticky .top-nav__logo-box {
+    display: none; } }
 
 /*nav end============================================================================================================================*/
 .main-heading {

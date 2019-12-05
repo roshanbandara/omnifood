@@ -24,7 +24,8 @@
             <nav class="top-nav">
                 <div class="top-nav__logo-box">
                     <a href="#header"><img src="img/logo-white.png" alt="Omnifood logo" class="top-nav__logo"></a> <!-- roshan - modified by me to make the logo as fuction as home button-->
-                    <a href="#header"><img src="img/logo.png" alt="Omnifood logo" class="top-nav__logo-black"></a>
+                    <a href="#header"><img src="img/p-holder/logo.jpg" data-src="img/logo.png" data-srcset="img/logo.png" alt="Omnifood logo" class="top-nav__logo-black lazy"></a>
+                    <!-- roshan - added lazy loading to the black logo as the lighthouse suggested - Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive.-->
                 </div>
 				<div class="top-nav__links js--main-nav">
                     <div class="top-nav__link-box"> <!-- roshan also icons by me-->
